@@ -1,0 +1,15 @@
+.menu ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 10
+}
+menu li{
+    padding: 8px;
+     margin-bottom: 7px;
+     background-color: #F3F118;
+    color: black;
+   
+}
+menu li:hover{
+    background-color: #B6A00E ;
+}
