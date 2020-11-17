@@ -64,7 +64,7 @@ menu li:hover{
       }
       h1{
           background-color: #F3F118;
-          padding: 50px green;
+          
       }
       ul {
           overflow: hidden;
@@ -86,6 +86,7 @@ menu li:hover{
     
     .active {
       background-color:aquamarine;
+      border-style: solid aquamarine;
     }
     a{
         text-decoration: none;
