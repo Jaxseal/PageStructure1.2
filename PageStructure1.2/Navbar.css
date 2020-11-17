@@ -66,6 +66,7 @@ menu li:hover{
           background-color: #F3F118;
       }
       ul {
+          overflow: hidden;
         list-style-type: none;
         margin: 0;
         padding: 50px black;
