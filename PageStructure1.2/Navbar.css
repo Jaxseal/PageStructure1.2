@@ -65,7 +65,30 @@ menu li:hover{
       h1{
           background-color: #F3F118;
       }
-      nav{
-          float:left;
-          display: inline;
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:black;
+        color:blueviolet;
+        font:x-large;
+        
       }
+      li{
+          display:inline;
+      }
+    
+    
+    .active {
+      background-color:cyan;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    
+    li a:hover {
+      background-color:darkcyan;
+    }
+      
