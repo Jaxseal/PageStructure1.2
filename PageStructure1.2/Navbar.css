@@ -68,11 +68,12 @@ menu li:hover{
       ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 50px black;
         overflow: hidden;
         background-color:black;
         color:blueviolet;
         font:x-large;
+        
         
       }
       li{
