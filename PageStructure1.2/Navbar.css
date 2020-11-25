@@ -95,9 +95,7 @@ menu li:hover{
     
     li a:hover {
       background-color:darkcyan;
-      border: 300px;
+      width: 300px;
     }
-  nav:hover{
-    border: 300px;
-  }
+  
       
