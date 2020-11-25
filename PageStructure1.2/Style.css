@@ -42,3 +42,26 @@ html{
     Background-color: #F3F118;
     color: black;
 }
+.menu ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 10
+}
+menu li{
+    padding: 8px;
+     margin-bottom: 7px;
+     background-color: #F3F118;
+    color: black;
+   
+}
+menu li:hover{
+    background-color: #B6A00E ;
+}
+
+  .footer {
+    background-color: #F3F118;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+  }
