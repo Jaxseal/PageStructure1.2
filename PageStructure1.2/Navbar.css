@@ -97,4 +97,7 @@ menu li:hover{
       background-color:darkcyan;
       width: 300px;
     }
+  nav:hover{
+    width: 300px;
+  }
       
