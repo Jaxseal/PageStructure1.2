@@ -46,6 +46,11 @@ menu li:hover{
         float: right
        
       }
+      .colm {
+        width: 50%;
+        float:left
+        
+      }
     
     .coll {
         width: 25%;
@@ -53,11 +58,7 @@ menu li:hover{
   }
   
     }
-    .colm {
-        width: 50%;
-        float:left
-        
-      }
+    
       text{
           background-color: aquamarine;
       }
