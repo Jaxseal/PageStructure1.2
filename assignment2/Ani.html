@@ -1,0 +1,118 @@
+<style> 
+            .ani{
+                width: 100px;
+                height: 100px;
+                position: relative;
+                background-color: plum;
+                animation-name: example;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                
+              }
+              
+              @keyframes example {
+                0%   {background-color: purple; left:100px; top:0px;}
+                25%  {background-color: plum; left:200px; top:0px;}
+                50%  {background-color: purple; left:300px; top:0px;}
+                75%  {background-color: plum; left:400px; top:0px;}
+                100% {background-color: purple; left:0px; top:0px;}
+              }
+    </style>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS.css">
+    </head>
+    
+    </head>
+    <body>
+    
+    <div class="header">
+      <h1>CSS</h1>
+      <p>By Jack Blaxill.</p>
+    </div>
+     
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="boxmodel.html">boxmodel</a>
+      <a href="implementation.html">Implementation</a>
+    
+      
+      <div class="dropdown">
+      <button class="dropbtn">Techniques
+      <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+          <a href="Ani.html">Animations</a>
+          <a href="tran.html">Transitions</a>
+          <a href="Tech.html">Responsive and Navbars</a>
+          
+      </div>
+    
+      <div class="row">
+        <div class="side">
+          
+          
+          <h3>      </h3>
+          
+        <div class="main">
+            
+              </head>
+              <body>
+              <h1>Animation</h1>
+              <div class="ani"></div>
+              <p>Above is an example of an animation which allows to
+                  change how an element changes between styles. There are a list of properties
+                  for animation such as; keyframes, name, duration, delay, iteration count, direction,
+                  timing-function, fill-mode. You can use animations for multiple things one of which
+                  is if it doesnt repeat you how ever on this page i have set the animation-iteration-count to infinite
+                  which means that the animation will iterate forever how ever but you can put it to something 
+                  such as 3 which means that it will only iterate three times.
+              </p>
+              <p>
+                  <code>@keyframes</code> is where you put the styling for the elements which will
+                  be used during the animation here is an example:<code>  
+                      <p>@keyframes example {</p>
+                    <p>0%   {background-color: purple; left:0px; top:0px;}</p>
+                    <p>25%  {background-color: plum; left:0px; top:200px;}</p>
+                    <p>50%  {background-color: rgb(110, 197, 110); left:200px; top:200px;}</p>
+                    <p>75%  {background-color: palevioletred; left:200px; top:0px;}</p>
+                    <p>100% {background-color: purple; left:0px; top:0px;}</p>
+                </code>
+                The percentage determines what the style of the element at a certain time during the animation.
+                below is the code which describes how the features of the animation such as ho wmany times it will
+                Itterate, how long it lasts, the name etc.
+                <code>
+                    <p>.ani{</p>
+                    <p>     width: 100px;</p>    
+                    <p>height: 100px;</p>
+                    <p>position: relative;</p> 
+                    <p>background-color: plum;</p>
+                    <p>animation-name: example;</p>
+                    <p>animation-duration: 2s;</p>
+                    <p>animation-iteration-count: infinite;</p>
+                        
+                    <p> }</p>  
+
+                    <h2>Refrences</h2>
+                        <div class="navbar">
+                            <a href="https://www.w3schools.com/css/css3_animations.asp" > https://www.w3schools.com/css/css3_animations.asp</a>
+                        </div>
+               
+                      
+
+                </code>
+                  
+            </p>
+            
+          
+      </div>
+      
+      <div class="footer">
+        <h2>JACK BLAXILL</h2>
+      </div>
+    
+    </div>
+    
+    
+    </body>
+    </html>

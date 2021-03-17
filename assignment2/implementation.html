@@ -1,0 +1,157 @@
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS.css">
+    </head>
+    <style>
+      
+    
+    </style>
+    
+    </head>
+    <body>
+    
+    <div class="header">
+      <h1>CSS</h1>
+      <p>By Jack Blaxill.</p>
+    </div>
+    
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="boxmodel.html">boxmodel</a>
+      <a href="implementation.html">Implementation</a>
+      <div class="dropdown">
+      <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+          <a href="Ani.html">Animations</a>
+          <a href="tran.html">Transitions</a>
+          <a href="Tech.html">Responsive and Navbars</a>
+      </div>
+    
+    <div class="row">
+      <div class="side">
+        <div class="main">
+            <h2>CSS Selectors</h2>
+            <p>Below is an example of a Class selector which will apply that style for all the elements with that class,below is an example of the code: </p>
+            <Code>
+                <p>.header h1 {
+                <p>    font-size: 30px;
+                <p>       }
+        </Code></p>
+            <p>Universal Seletor will apply that style for all of the the elments on the page, below is an example of the code:</p>
+            <Code>
+                <p> *{
+                <p>    font-size: 30px;
+                <p>       }
+        </Code></p>
+        <p>Element Selector will change the style for all the elments with that elment name, below is an example of the code: </p>
+            <Code>
+                <p> h1{
+                <p>    font-size: 30px;
+                <p>       }
+        </Code></p>
+            <h2>Inline</h2>
+            <h5></h5>
+            
+            <p>There are three ways which html can acess CSS one 
+                of which is Inline which means that the CSS is written in 
+                the tag of the html elment an example would be <code>&lt;h1 style="color: red; font-size: 30px;"&gt;</code>
+                this will make the text of the h1 element red with a ont size of 30px.The reason
+                why you would use inline css would be is you only want to apply that style to
+                that specific element. Also if you where to use purley inline CSS it would be very un-efficant since
+                you would have to write the style in the tag for every element which means that it would be more efficent to use embedded CSS. </p>
+                <img src="inline.PNG" style="height:100px" alt=""><br>
+            
+            <br>
+            <h2>Embedded</h2>
+            
+            <p>The second way which html can acces html is with embedded css
+                this means that the CSS is written at the top of the HTML file
+                in the head and it will be in a style tag an example of embedded css would
+                be <code> .h1{color: yellow font-size: 50px;}</code> this would make every h1 element in the 
+                html file yellow with a font size of 50.the reason why you would use embedded CSS
+                over the other two ways is if you want to apply that effect to every h1 element in that
+                file but you dont want to apply that effect to all of the files.</p>
+                <img src="embedded.PNG" style="height:100px" alt=""><br>   
+            <h2>External</h2>
+            
+            <p>The third way is external which is written in a seperate file from
+                the html file then at the top of the HTML file you reference the css
+                file an example of the code which does this is <code>&lt; link rel="stylesheet" href="style.css" &gt;</code>
+                then in the CSS file is where you write the CSS and then it will apply
+                the effect to all the element across all the files it is referenced in 
+                also if you use a variable in a CCS file then you have a CSS file refernced below
+                the file below will inherit the variables from the file above.</p>
+                <img src="External.PNG" style="height:100px" alt=""><br>  
+                
+                <h2>Summary
+                </h2>
+            <p>
+                
+            </p>
+            <p>
+                If you have multiple sources of CSS which all have different properties for a single elment 
+                the CSS which will be used it the most recent one, which is always inline then for inline and embedded
+                it will use which ever one is lowest down in the file i.e. if the external file is refrenced after the embedded CSS
+                it will use the styling in the extrenal CCS rather than the embedded.
+            </p>
+            <p>
+               There are multiple reasons to use the different implementation styles of CSS
+               for example if you are going to have a single webpage it would be pointless
+               to use external CSS since you could just write it at the top of the html file
+               and you have to load the CSS file aswell as teh HTML file.
+            </p>
+           
+               <p>A reason why you might want to use inline CSS is if you only what to use that style
+               for a singl elment another advantage of having inline CSS is that it overides
+               the the ebbeded or External CSS. An example where i would use this is if i wanted to
+               highlight a single paragragh of text since it will overight the main Style.
+
+            </p>
+            <p>The reason why you would use External is if you are going to have multiple webpages since
+                it means that you only have to write the CSS once then you can just refrence it at the top of each one of the HTML files.
+                Another good thing extrenal CSS if you need to edit in the future you only have to edit it once
+                unlike embedded or inline which you would have to change it on everypage/element.
+        
+            </p>
+            <p>You would use embedded CSS if you wanted to only apply that style to a single webpage which could be useful
+                if you only have a single web page or if you only want to apply that styling to that one webpage. If that is the case 
+                you will have to write the embedded CSS after you have refrenced the CSS. An example of where this might be useful is if you want
+                to keep the same font as the other web pages but change the colours since you could write embedded CSS which changes colour and it will only change the colour
+                and still use the font from the external file.
+            </p>
+            <p>
+                
+            </p>
+            <h2>Refrences</h2>
+            <div class="navbar">
+                <a href=" http://www.w3schools.com/css/css_howto.asp"> http://www.w3schools.com/css/css_howto.asp</a>
+            </div>
+               
+                   
+                  
+            
+            
+                <p></p><br>
+         
+            </div>
+        </div>
+      
+    </div>
+    
+    
+    </body>
+    </html>
+    
+    
+ 
+
+<div class="footer">
+  <h2>JACK BLAXILL</h2>
+  
+</div>
+
+</body>
+</html>
