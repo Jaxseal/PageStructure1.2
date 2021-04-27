@@ -1,0 +1,146 @@
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS.css">
+    </head>
+    <style>
+      .border{
+        width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+      }
+      .content{
+        background-color: gray;
+      }
+    </style>
+    
+
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="CSS.css">
+      </head>
+      <style>
+        
+      
+      </style>
+      
+      </head>
+      <body>
+      
+      <div class="header">
+        <h1>CSS</h1>
+        <p>By Jack Blaxill.</p>
+      </div>
+      
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="boxmodel.html">Implementation</a>
+        <a href="implementation.html">security</a>
+        <div class="dropdown">
+        <button class="dropbtn">Dropdown 
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="Ani.html">Browser Issues</a>
+            <a href="tran.html">Factors</a>
+            
+        </div>
+      <div class="row">
+        <div class="side">
+          <h2>Images</h2>
+          <h5>Box model:</h5>
+          <img src="boxmodel.jfif" style="height:200px" alt="">
+          
+          <h3>      </h3>
+          
+        <div class="main">
+          <h2>Examples of Java Script</h2>
+          <h2>Cookies</h2>
+          <script>
+            function setCookie(cname,cvalue,exdays) {
+              var d = new Date();
+              d.setTime(d.getTime() + (exdays*24*60*60*1000));
+              var expires = "expires=" + d.toGMTString();
+              document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+            
+            function getCookie(cname) {
+              var name = cname + "=";
+              var decodedCookie = decodeURIComponent(document.cookie);
+              var ca = decodedCookie.split(';');
+              for(var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                  c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                  return c.substring(name.length, c.length);
+                }
+              }
+              return "";
+            }
+            
+            function checkCookie() {
+              var user=getCookie("username");
+              if (user != "") {
+                alert("Welcome again " + user);
+              } else {
+                 user = prompt("Please enter your name:","");
+                 if (user != "" && user != null) {
+                   setCookie("username", user, 30);
+                 }
+              }
+            }
+            </script>
+            </head>
+            
+            <body onload="checkCookie()"></body>
+          <h2>JavaScript Alert</h2>
+
+            <button onclick="myAlert()">Alert</button>
+            <p>
+              This is an alert when you click the button above it will bring up an
+              alert at the top of the browser window.This is useful since it means that the user will
+              always see it since it will stay at the top of their window until they close it.
+            </p>
+
+            <script>
+            function myAlert() {
+              alert("I am an alert box!");
+            }
+            </script>
+          <h2>Browser dectection</h2>
+          <p>Browser decection allows for you to determine which browser the user is 
+            running the website on this is useful since you can adjust the code based on the users browser so that
+            the code will run as intended on the users browser.
+          
+          <p>
+            <h1>version:</h1>
+            <p id="browser"></p>
+            <h1>name:</h1>
+            <p id="browser2"></p>
+            <h1>codename:</h1>
+            <p id="browser3"></p>
+          
+          </p>
+          <script>
+            document.getElementById("browser").innerHTML = navigator.appVersion;
+            document.getElementById("browser2").innerHTML = navigator.appName;
+            document.getElementById("browser3").innerHTML = navigator.appCodeName;
+            alert(navigator.userAgent)
+            </script>
+          <br>
+          
+      </div>
+      
+      <div class="footer">
+        <h2>JACK BLAXILL</h2>
+      </div>
+    
+    </div>
+    
+    
+    </body>
+    </html>
+    

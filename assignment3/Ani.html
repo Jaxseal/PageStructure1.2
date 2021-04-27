@@ -1,0 +1,118 @@
+<style> 
+            .ani{
+                width: 100px;
+                height: 100px;
+                position: relative;
+                background-color: plum;
+                animation-name: example;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                
+              }
+              
+              @keyframes example {
+                0%   {background-color: purple; left:100px; top:0px;}
+                25%  {background-color: plum; left:200px; top:0px;}
+                50%  {background-color: purple; left:300px; top:0px;}
+                75%  {background-color: plum; left:400px; top:0px;}
+                100% {background-color: purple; left:0px; top:0px;}
+              }
+    </style>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS.css">
+  </head>
+  <style>
+    
+  
+  </style>
+  
+  </head>
+  <body>
+  
+  <div class="header">
+    <h1>CSS</h1>
+    <p>By Jack Blaxill.</p>
+  </div>
+  
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="boxmodel.html">boxmodel</a>
+    <a href="implementation.html">security</a>
+    <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+    <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="Ani.html">Browser Issues</a>
+        <a href="tran.html">Factors</a>
+        
+    </div>
+    
+      <div class="row">
+        <div class="side">
+          
+          
+          <h3>      </h3>
+          
+        <div class="main">
+            
+              </head>
+              <body>
+              <div class="ani"></div>
+              <h1>JavaScript running different on browsers</h1>
+              
+              <p>
+                becasue different browsers have slightly different versions of the 
+                Javaengine this means that the same javascript may run differently dependent 
+                on the browser.
+              </p>
+              <h1>Getting the size of the veiwport</h1>
+              <p>
+                The first example is how you decect the size of the veiw port on firefox
+                and internet explorer internet explorer code:
+                <code>var myBrowserSize = [0, 0];
+                  myBrowserSize[0] = document.documentElement.clientWidth;
+                  myBrowserSize[1] = document.documentElement.clientHeight;</code>
+                  however this code will not work in fire fox however below is the code which 
+                  will work in firefox:
+                  <code>
+                    var myBrowserSize = [0, 0];
+                    myBrowserSize[0] = window.innerWidth;
+                    myBrowserSize[1] = window.innerHeight;
+                  </code>
+                <h1>Changing the CSS float property</h1>
+                <p>
+                  
+                  <code>document.getElementById("header").style.styleFloat = "left";</code>
+                  This code works when using internet explorer however if i try to
+                  run it in firefox it does not work. Below is the code which works in firefox:
+                  <code>document.getElementById("header").style.cssFloat = "left";</code>
+                </p>
+                
+              
+
+                    <h2>Refrences</h2>
+                        <div class="navbar">
+                            <a href="https://www.w3schools.com/css/css3_animations.asp" > https://www.w3schools.com/css/css3_animations.asp</a>
+                        </div>
+               
+                      
+
+                </code>
+                  
+            </p>
+            
+          
+      </div>
+      
+      <div class="footer">
+        <h2>JACK BLAXILL</h2>
+      </div>
+    
+    </div>
+    
+    
+    </body>
+    </html>
