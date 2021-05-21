@@ -1,0 +1,151 @@
+<style> 
+            .ani{
+                width: 100px;
+                height: 100px;
+                position: relative;
+                background-color: plum;
+                animation-name: example;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                
+              }
+              
+              @keyframes example {
+                0%   {background-color: purple; left:100px; top:0px;}
+                25%  {background-color: plum; left:200px; top:0px;}
+                50%  {background-color: purple; left:300px; top:0px;}
+                75%  {background-color: plum; left:400px; top:0px;}
+                100% {background-color: purple; left:0px; top:0px;}
+              }
+    </style>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS.css">
+  </head>
+  <style>
+    
+  
+  </style>
+  
+  </head>
+  <body>
+  
+  <div class="header">
+    <h1>CSS</h1>
+    <p>By Jack Blaxill.</p>
+  </div>
+  
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="boxmodel.html">boxmodel</a>
+    <a href="implementation.html">security</a>
+    <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+    <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="Ani.html">Browser Issues</a>
+        <a href="tran.html">Factors</a>
+        
+    </div>
+    
+      <div class="row">
+        <div class="side">
+          
+          
+          <h3>      </h3>
+          
+        <div class="main">
+            
+              </head>
+              <body>
+              <div class="ani"></div>
+              <h1>JavaScript running different on browsers</h1>
+              
+              <p>Different browsers read and process the JavaScript differently which means that the script may work differently depending on the browser you are using this is since different browsers use a different Java engine Which is the reason why they process the JavaScript slightly differently. For example some engines use different command words this means that you have to use a different command depending on what browser you are using.</p>
+              
+              <h1>Getting the Veiwport Size</h1>
+              <p>This is the code which can be used to get the size of the viewport when I run it on Internet explorer it works however when I try to run it on Firefox is does not work: </p>
+              <p><code>var myBrowserSize = [0, 0]; myBrowserSize[0] = document.documentElement.clientWidth; myBrowserSize[1] = document.documentElement.clientHeight;</code></p>
+              <p>To fix this error you must change the command since<code>document.documentElement.clientWidth</code></p>
+              <p>Is the correct command to use for the internet explorer browser however it does not work in fire fox since Firefox uses a different command which is <code>window.innerWidth </code></p>
+              <p>This means what I must do is create JavaScript which detects what browser the user is on and if it is Firefox then it will run the script with the Firefox command and if it is internet explorer it will then run the script with the internet explorer command</p>   
+              <p>Bellow is an example of the code which works as well as a button which runs that code:</p> 
+              <img src="veiwport.PNG" alt="code">
+              <script>
+                function browser(){
+                const browser = navigator.userAgent;
+                    if (browser =='MSIE') {
+                        var myBrowserSize = [0, 0]; myBrowserSize[0] = document.documentElement.clientWidth; myBrowserSize[1] = document.documentElement.clientHeight;
+                        alert("INTERNET EXPLORER");
+            } 
+            else if (browser =='Firefox') {
+                var myBrowserSize = [0, 0]; myBrowserSize[0] = window.innerWidth; myBrowserSize[1] = window.innerHeight;
+                alert("FIREFOX");
+            } 
+            else {
+              var myBrowserSize = [0, 0]; myBrowserSize[0] = document.documentElement.clientWidth; myBrowserSize[1] = document.documentElement.clientHeight;
+                alert("OTHER browser", myBrowserSize);
+            }
+            }
+            
+            
+            </script>
+          <body>  
+            <p>This runs the code which gets the Veiwport of the Browser and will select what code is needed to be used based on what browser you are using</p>  
+                <input type = "button" onclick = "browser()" value = "Run">  
+                </body> 
+                <h1>Changing the CSS float property of a HTML element</h1>
+                <p>Changing the CSS float property of a HTML element below is the code which works on Itnernet explore: </p>
+                <p><code>document.getElementById("header").style.styleFloat = "left";</code></p>
+                <p>However this code will not work on Firefox due to the fact that it uses a different command that so the code which will work on the Firefox browser: </p> 
+                 <p><code>document.getElementById("header").style.cssFloat = "left";</code></p>           
+                <p>This works because it used the Firefox command <code>style.cssFloat</code></p>
+                <p>Rather than the command which works on internet explorer which is <code>style.styleFloat </code></p>
+                <p>To make the script work on both FireFox and Internet explore I will need to have browser detection then I will have to select what code is to be used based on what browser is being use bellow is that code:</p>
+                <img src="float.PNG" alt="code">
+                <script>
+                  function browser(){
+                  const browser = navigator.userAgent;
+                      if (browser =='MSIE') {
+                          document.getElementById("header").style.styleFloat = "left";
+                          alert("INTERNET EXPLORER");
+              } 
+              else if (browser =='Firefox') {
+                  document.getElementById("header").style.cssFloat = "left";
+                  alert("FIREFOX");
+              } 
+              else {
+                  alert("OTHER browser");
+              }
+              }
+              
+              
+              </script>
+              <body>  
+                  <p>Click this button to run the code above</p>  
+                  <input type = "button" onclick = "browser()" value = "run">  
+                  </body>  
+                <h2>Refrences</h2>
+                        <div class="navbar">
+                            <a href="https://www.w3schools.com/css/css3_animations.asp" > https://www.w3schools.com/css/css3_animations.asp</a>
+                        </div>
+           
+
+                </code>
+                  
+            </p>
+            
+          
+      </div>
+      
+      <div class="footer">
+        <h2>JACK BLAXILL</h2>
+      </div>
+    
+    </div>
+    
+    
+    </body>
+    </html>
